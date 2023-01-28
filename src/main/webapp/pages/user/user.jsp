@@ -21,6 +21,7 @@
             <td>${user.firstname}</td>
             <td>${user.secondname}</td>
             <td>${user.age}</td>
+            <td>${user.userType}</td>
         </tr>
     </c:forEach>
 

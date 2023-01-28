@@ -14,6 +14,7 @@
             <td><input type="text" name="firstname" placeholder="Enter Name"></td>
             <td><input type="text" name="secondname" placeholder="Enter Surname"></td>
             <td><input type="text" name="age" placeholder="Enter Age"></td>
+            <td><input type="text" name="userType" placeholder="Enter userType"></td>
             <td><input type="submit" value="Enroll"></td>
         </tr>
     </form>

@@ -1,6 +1,7 @@
 package by.it.academy.repositories;
 
 import by.it.academy.enteties.User;
+import by.it.academy.enteties.UserType;
 
 import java.util.List;
 
@@ -12,11 +13,12 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public User createUser(String firstname, String secondname, String login, int age, int password) {
-        User user = new User(firstname,secondname,login,age,password);
+    public User createUser(String firstname, String secondname, String login, int age, int password, UserType userType) {
+        User user = new User(firstname,secondname,login,age,password,userType);
         users.add(user);
         return user;
     }
+
 
     @Override
     public List<User> readUsers() {

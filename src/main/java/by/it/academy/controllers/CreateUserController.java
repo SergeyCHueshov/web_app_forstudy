@@ -1,5 +1,6 @@
 package by.it.academy.controllers;
 
+import by.it.academy.enteties.UserType;
 import by.it.academy.services.UserService;
 import by.it.academy.services.UserServiceImpl;
 
@@ -26,7 +27,8 @@ public class CreateUserController extends HttpServlet {
         String login = req.getParameter("login");
         int age = Integer.parseInt(req.getParameter("age"));
         int password = Integer.parseInt(req.getParameter("password"));
-        userService.createUser(firstname, secondname, login, age, password);
+        UserType userType = UserType.valueOf(req.getParameter("userType"));
+        userService.createUser(firstname, secondname, login, age, password, userType);
         req.getRequestDispatcher(USERS_URI).forward(req, resp);
     }
 

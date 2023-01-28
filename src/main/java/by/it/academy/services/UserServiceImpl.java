@@ -1,6 +1,7 @@
 package by.it.academy.services;
 
 import by.it.academy.enteties.User;
+import by.it.academy.enteties.UserType;
 import by.it.academy.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 
@@ -12,8 +13,8 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
     @Override
-    public void createUser(String firstname, String secondname, String login, int age, int password) {
-        userRepository.createUser(firstname, secondname, login, age, password);
+    public void createUser(String firstname, String secondname, String login, int age, int password, UserType userType) {
+        userRepository.createUser(firstname, secondname, login, age, password, userType);
     }
 
     @Override
