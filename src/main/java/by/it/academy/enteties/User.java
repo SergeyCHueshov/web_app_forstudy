@@ -4,9 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data //приколюха ломбока, содержащая конструктор и аксессоры;
-@NoArgsConstructor// ломбок-конструктор без параметров;
-@AllArgsConstructor //ломбок-конструктор с полями;
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     private String firstname;
     private String secondname;
@@ -14,6 +14,4 @@ public class User {
     private int age;
     private int password;
     private UserType userType;
-
-
 }

@@ -7,21 +7,18 @@ import java.util.List;
 
 public class UserRepositoryImpl implements UserRepository {
     private final List<User> users;
-
     public UserRepositoryImpl(List<User> users) {
         this.users = users;
     }
-
     @Override
-    public User createUser(String firstname, String secondname, String login, int age, int password, UserType userType) {
-        User user = new User(firstname,secondname,login,age,password,userType);
+    public User createUser(String firstname, String secondname, int age, String login, String password, UserType userType) {
+        User user = new User();
         users.add(user);
         return user;
     }
-
-
     @Override
     public List<User> readUsers() {
         return users;
     }
+
 }

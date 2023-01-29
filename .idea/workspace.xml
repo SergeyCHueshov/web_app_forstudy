@@ -9,27 +9,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="705a2d27-1db9-40eb-a1fb-d50193ffb6b5" name="Changes" comment="add both filters and tools for creating and reading users">
+    <list default="true" id="705a2d27-1db9-40eb-a1fb-d50193ffb6b5" name="Changes" comment="add authoriztion controller">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/controllers/AuthorizationUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/filters/UserAdminFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/user/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/user/enrollment.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/it/academy/controllers/CreateUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/controllers/CreateUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/it/academy/controllers/ReadUsersControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/controllers/ReadUsersControllers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/it/academy/enteties/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/enteties/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/it/academy/enteties/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/enteties/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/it/academy/filters/AuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/filters/AuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/it/academy/filters/LoginCompareFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/filters/LoginCompareFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/it/academy/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/it/academy/repositories/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/repositories/UserRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/it/academy/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/it/academy/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/it/academy/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/user/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/user/user.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -58,6 +74,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2KpCHLlsYdMBflFE7wwJ6vuQ5CK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -70,6 +89,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/web_app_study/web_appp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,20 +103,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="by.it.academy.repositories" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="webbbb" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="webbbb" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.70" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.70" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -188,7 +200,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e6e402a8-1525-4477-a2ac-e0a0cb6e2df7" name="Changes" comment="" />
+      <changelist id="705a2d27-1db9-40eb-a1fb-d50193ffb6b5" name="Changes" comment="add filter for authorization" />
       <created>1674662053661</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -196,6 +208,7 @@
       <workItem from="1674662055607" duration="7535000" />
       <workItem from="1674744810141" duration="1532000" />
       <workItem from="1674930147385" duration="614000" />
+      <workItem from="1674995313813" duration="28017000" />
     </task>
     <task id="LOCAL-00001" summary="firstComit">
       <created>1674663732405</created>
@@ -260,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674932251519</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add filter for authorization">
+      <created>1674945154447</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674945154447</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +303,11 @@
     <MESSAGE value="secondCommit" />
     <MESSAGE value="add tools for creating and reading users and create filter for looking for the unique login" />
     <MESSAGE value="add both filters and tools for creating and reading users" />
-    <option name="LAST_COMMIT_MESSAGE" value="add both filters and tools for creating and reading users" />
+    <MESSAGE value="add filter for authorization" />
+    <MESSAGE value="add authoriztion controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="add authoriztion controller" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/web_appp$Tomcat_9_0_70.ic" NAME="Tomcat 9.0.70 Coverage Results" MODIFIED="1675005997183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
